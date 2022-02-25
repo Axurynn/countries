@@ -1,0 +1,45 @@
+.card {
+	background-color: var(--bg-color-element);
+	border-radius: 10px;
+	margin: 1em 1.5em;
+	box-shadow: 0px 0px 20px 5px var(--box-shadow-header);
+	transition: 0.5s;
+
+	.flag {
+		height: 180px;
+		width: 260px;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.description {
+		padding: 1em 1.5em;
+
+		.countryName {
+			font-weight: 600;
+			font-size: 1.2rem;
+		}
+
+		.infos {
+			.info {
+				font-weight: 600;
+				font-size: 0.9rem;
+
+				.infoDetail {
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.card {
+		width: 260px;
+		height: 360px;
+		margin: 2em;
+
+		&:hover {
+			scale: 1.04;
+		}
+	}
+}

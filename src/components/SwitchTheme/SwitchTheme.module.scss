@@ -1,0 +1,16 @@
+@import '../../styles/index.scss';
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: var(--text-color);
+	font-size: 0.8rem;
+
+	.icon {
+		padding-right: 0.5em;
+		width: 20px;
+		height: 20px;
+	}
+}

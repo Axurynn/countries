@@ -1,0 +1,15 @@
+.theme-light {
+	--text-color: #000;
+	--bg-color: #fafafa;
+	--bg-color-element: #fff;
+	--text-color-searchbar: #212121;
+	--box-shadow-header: rgba(209, 208, 208, 0.8);
+}
+
+.theme-dark {
+	--text-color: #fff;
+	--bg-color: #202d36;
+	--bg-color-element: #2b3743;
+	--text-color-searchbar: #dfe1e4;
+	--box-shadow-header: rgba(29, 42, 51, 0.8);
+}
