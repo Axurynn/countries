@@ -3,3 +3,19 @@
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
+@media screen and (min-width: 1000px) {
+	.containerSearchFilter {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		.search {
+			width: 50%;
+		}
+
+		.filter {
+			width: 30%;
+		}
+	}
+}
