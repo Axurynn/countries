@@ -6,9 +6,10 @@
 
 @media screen and (min-width: 1000px) {
 	.containerSearchFilter {
-		width: 100%;
+		width: calc(100% - 16em);
 		display: flex;
 		justify-content: space-between;
+		padding: 1em 5em;
 
 		.search {
 			width: 50%;
