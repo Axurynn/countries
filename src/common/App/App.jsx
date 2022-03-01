@@ -1,6 +1,6 @@
 import s from './App.module.scss';
 import { Routes, Route } from 'react-router-dom';
-import { useEffect, useState, createContext, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '../../layouts/Header/Header';
 import Home from '../../layouts/Home/Home';
 import CountryDetails from '../../layouts/CountryDetails/CountryDetails';
