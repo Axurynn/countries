@@ -4,19 +4,26 @@
 	justify-content: center;
 }
 
+.containerSearchFilter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0 1em;
+}
+
 @media screen and (min-width: 1000px) {
+	.cards {
+		justify-content: space-between;
+		flex-direction: row;
+		padding: 0;
+	}
 	.containerSearchFilter {
-		width: calc(100% - 16em);
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		padding: 1em 5em;
-
-		.search {
-			width: 50%;
-		}
-
-		.filter {
-			width: 30%;
-		}
+		flex-direction: row;
+		align-items: center;
+		padding: 0;
 	}
 }

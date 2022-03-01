@@ -14,7 +14,10 @@ const Card = ({
 				<h2 className={s.countryName}>{name}</h2>
 				<div className={s.infos}>
 					<p className={s.info}>
-						Population : <span className={s.infoDetail}>{population}</span>
+						Population :{' '}
+						<span className={s.infoDetail}>
+							{new Intl.NumberFormat('en-EN').format(population)}
+						</span>
 					</p>
 					<p className={s.info}>
 						Region : <span className={s.infoDetail}>{region}</span>

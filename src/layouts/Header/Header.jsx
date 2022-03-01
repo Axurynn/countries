@@ -12,7 +12,7 @@ const Header = () => {
 	}, []);
 	return (
 		<div className={s.header}>
-			<h1 className={s.headerTitle}>Where in the world ?</h1>
+			<h1 className={s.headerTitle}>Where in the world?</h1>
 			<SwitchTheme changeTheme={changeTheme} setChangeTheme={setChangeTheme} />
 		</div>
 	);

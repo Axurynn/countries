@@ -39,12 +39,8 @@ const Home = () => {
 	return (
 		<div onClick={() => detailsRef.current.removeAttribute('open')}>
 			<section className={s.containerSearchFilter}>
-				<div className={s.search}>
-					<Search text={search} callback={setSearch} />
-				</div>
-				<div className={s.filter}>
-					<Filter callback={setCountriesRegion} detailsRef={detailsRef} />
-				</div>
+				<Search text={search} callback={setSearch} />
+				<Filter callback={setCountriesRegion} detailsRef={detailsRef} />
 			</section>
 			<section className={s.cards}>
 				{searchCountries.map((country, i) => (

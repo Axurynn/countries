@@ -1,18 +1,18 @@
 @import '../../styles/index.scss';
 
 .filterContainer {
-	width: 40%;
-	margin: 1em;
-	padding: 1em;
 	background-color: var(--bg-color-element);
-	border-radius: 10px;
 	font-size: 1rem;
+	width: 55%;
+	margin: 1em 0;
 	position: relative;
 	box-shadow: 0px 0px 20px 5px var(--box-shadow-header);
+	border-radius: 10px;
 
 	.details {
+		border-radius: 10px;
 		background-color: var(--bg-color-element);
-		width: 100%;
+		padding: 1em;
 
 		&[open] > .summary > .chevron {
 			transform: rotate(-180deg);
@@ -58,6 +58,6 @@
 
 @media screen and (min-width: 1000px) {
 	.filterContainer {
-		width: 100%;
+		width: 15%;
 	}
 }

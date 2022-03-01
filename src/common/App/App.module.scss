@@ -21,3 +21,15 @@
 		color: var(--text-color);
 	}
 }
+
+@media screen and (min-width: 1000px) {
+	.app {
+		.appMain {
+			padding: 1em 5em;
+		}
+
+		&Header {
+			width: 100%;
+		}
+	}
+}

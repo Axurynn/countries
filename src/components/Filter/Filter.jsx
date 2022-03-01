@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import s from './Filter.module.scss';
 import { ReactComponent as Chevron } from '../../assets/svg/chevron-down-outline.svg';
 

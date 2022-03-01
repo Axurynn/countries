@@ -1,5 +1,4 @@
 .header {
-	width: calc(100vw - 3em);
 	padding: 3em 1.5em;
 	display: flex;
 	flex-direction: row;
@@ -11,7 +10,6 @@
 
 @media screen and (min-width: 1000px) {
 	.header {
-		width: calc(100vw - 18em);
 		padding: 1em 8em;
 		font-size: 0.7rem;
 	}
