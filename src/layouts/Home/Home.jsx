@@ -1,25 +1,18 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useContext } from 'react';
 import Card from '../../components/Card/Card';
 import Filter from '../../components/Filter/Filter';
 import Search from '../../components/Search/Search';
 import s from './Home.module.scss';
+import { NavLink } from 'react-router-dom';
+
+import { CountriesContext } from '../../context/CountriesContext';
 
 const Home = () => {
-	const [countries, setCountries] = useState([]);
+	const countries = useContext(CountriesContext);
 	const [search, setSearch] = useState('');
 	const [searchCountries, setSearchCountries] = useState([]);
 	const [countriesRegion, setCountriesRegion] = useState('');
 	const detailsRef = useRef(null);
-
-	useEffect(async () => {
-		try {
-			const res = await fetch('https://restcountries.com/v2/all');
-			const data = await res.json();
-			setCountries(data);
-		} catch (err) {
-			console.log(err);
-		}
-	}, []);
 
 	useEffect(() => {
 		const countriesFilter = countries.filter(country => {
@@ -44,14 +37,20 @@ const Home = () => {
 			</section>
 			<section className={s.cards}>
 				{searchCountries.map((country, i) => (
-					<Card
-						key={i}
-						name={country.name}
-						population={country.population}
-						capital={country.capital}
-						region={country.region}
-						flag={country.flags.png}
-					/>
+					<div key={i}>
+						<NavLink
+							to={`/${country.alpha3Code.toLowerCase()}`}
+							className={s.navlink}
+						>
+							<Card
+								name={country.name}
+								population={country.population}
+								capital={country.capital}
+								region={country.region}
+								flag={country.flags.png}
+							/>
+						</NavLink>
+					</div>
 				))}
 			</section>
 		</div>

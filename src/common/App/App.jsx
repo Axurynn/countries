@@ -1,17 +1,37 @@
 import s from './App.module.scss';
-
+import { Routes, Route } from 'react-router-dom';
+import { useEffect, useState, createContext, useContext } from 'react';
 import Header from '../../layouts/Header/Header';
 import Home from '../../layouts/Home/Home';
+import CountryDetails from '../../layouts/CountryDetails/CountryDetails';
+import { CountriesProvider } from '../../context/CountriesContext';
 
-function App() {
+const App = () => {
+	const [countries, setCountries] = useState([]);
+
+	useEffect(async () => {
+		try {
+			const res = await fetch('https://restcountries.com/v2/all');
+			const data = await res.json();
+			setCountries(data);
+		} catch (err) {
+			console.log(err);
+		}
+	}, []);
+
 	return (
 		<div className={s.app}>
-			<header className={s.appHeader}>
-				<Header />
-			</header>
-			<main className={s.appMain}>
-				<Home />
-			</main>
+			<CountriesProvider value={countries}>
+				<header className={s.appHeader}>
+					<Header />
+				</header>
+				<main className={s.appMain}>
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path=':slug' element={<CountryDetails />} />
+					</Routes>
+				</main>
+			</CountriesProvider>
 			<footer className={s.appFooter}>
 				<div className={s.attribution}>
 					Challenge by&nbsp;
@@ -26,6 +46,6 @@ function App() {
 			</footer>
 		</div>
 	);
-}
+};
 
 export default App;

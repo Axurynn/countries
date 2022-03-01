@@ -10,6 +10,14 @@
 	align-items: center;
 	background-color: var(--bg-color);
 	color: var(--text-color);
+
+	.appMain {
+		padding: 0 1em;
+	}
+
+	&Header {
+		width: 100%;
+	}
 }
 
 /* Attribution - footer */

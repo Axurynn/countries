@@ -1,0 +1,137 @@
+@import '../../styles/index.scss';
+
+.countryDetails {
+	font-size: 16px;
+
+	.containerButton {
+		.button {
+			margin-top: 1em;
+			border: none;
+			cursor: pointer;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding: 0.4em 2em;
+			background-color: var(--bg-color-element);
+			box-shadow: 0px 0px 50px 5px var(--box-shadow-header);
+			letter-spacing: 1px;
+			border-radius: 5px;
+			color: var(--text-color);
+
+			&Icon {
+				padding-right: 1em;
+				& svg {
+					width: 24px;
+					height: 24px;
+				}
+			}
+		}
+	}
+
+	.containerDetails {
+		margin: 2em 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.flag {
+			width: 320px;
+			height: 230px;
+			box-shadow: 0px 0px 50px 5px var(--box-shadow-header);
+		}
+
+		.containerInfos {
+			padding: 1em 0 0 2em;
+			.infosList {
+				.infoList {
+					.info {
+						font-weight: 600;
+
+						& > span {
+							font-weight: 400;
+						}
+					}
+
+					&:first-child {
+						margin-bottom: 2em;
+					}
+				}
+			}
+
+			.borderCountries {
+				.title {
+					font-weight: 600;
+					margin: 2em 0 1em;
+				}
+
+				.list {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: flex-start;
+					gap: 1em;
+
+					.border {
+						all: unset;
+						cursor: pointer;
+						margin: 0;
+						background-color: var(--bg-color-element);
+						box-shadow: 0px 0px 50px 5px var(--box-shadow-header);
+						padding: 1em;
+						border-radius: 5px;
+
+						&:hover {
+							scale: 1.04;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.countryDetails {
+		width: calc(100vw - 10em);
+
+		.containerDetails {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			.flag {
+				width: 40%;
+				height: 350px;
+			}
+
+			.containerInfos {
+				width: 50%;
+				.infosList {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					width: 85%;
+				}
+
+				.borderCountries {
+					display: flex;
+					flex-direction: row;
+					align-items: flex-start;
+
+					.title {
+						margin: 0;
+						width: 35%;
+					}
+
+					.list {
+						.border {
+							padding: 0.5em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
