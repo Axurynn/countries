@@ -27,8 +27,8 @@ const App = () => {
 				</header>
 				<main className={s.appMain}>
 					<Routes>
-						<Route path='/countries/' element={<Home />} />
-						<Route path='/countries/:slug' element={<CountryDetails />} />
+						<Route path='/' element={<Home />} />
+						<Route path='/:slug' element={<CountryDetails />} />
 					</Routes>
 				</main>
 			</CountriesProvider>

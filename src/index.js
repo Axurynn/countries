@@ -4,7 +4,7 @@ import 'normalize.css';
 import './styles/index.scss';
 import App from './common/App/App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
 	<React.StrictMode>
