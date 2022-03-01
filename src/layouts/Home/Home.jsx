@@ -39,7 +39,7 @@ const Home = () => {
 				{searchCountries.map((country, i) => (
 					<div key={i}>
 						<NavLink
-							to={`/countries/${country.alpha3Code.toLowerCase()}`}
+							to={`/${country.alpha3Code.toLowerCase()}`}
 							className={s.navlink}
 						>
 							<Card
