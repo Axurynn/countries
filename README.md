@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Frontend Mentor - REST Countries API with color theme switcher
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Frontend Mentor - REST Countries API with color theme switcher](#frontend-mentor---rest-countries-api-with-color-theme-switcher)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshots](#screenshots)
+      - [Home Page - Light theme](#home-page---light-theme)
+      - [Home Page - Dark theme](#home-page---dark-theme)
+      - [Details Page](#details-page)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- See all countries from the API on the homepage
+- Search for a country using an input field
+- Filter countries by region
+- Click on a country to see more detailed information on a separate page
+- Click through to the border countries on the detail page
+- Toggle the color theme between light and dark mode
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshots
 
-### `npm run build`
+#### Home Page - Light theme
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Desktop screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![desktop-screenshot](./src/assets/screenshots/desktop-screenshot(light).png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Mobile screenshot
 
-### `npm run eject`
+![mobile-screenshot](./src/assets/screenshots/mobile-screenshot(light).png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Home Page - Dark theme
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Desktop screenshot
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![desktop-screenshot](./src/assets/screenshots/desktop-screenshot(dark).png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Mobile screenshot
 
-## Learn More
+![mobile-screenshot](./src/assets/screenshots/mobile-screenshot(dark).png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Details Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Desktop screenshot
 
-### Code Splitting
+![desktop-screenshot](./src/assets/screenshots/desktop-screenshot(detailsPage).png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Mobile screenshot
 
-### Analyzing the Bundle Size
+![mobile-screenshot](./src/assets/screenshots/mobile-screenshot(detailsPage).png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Links
 
-### Making a Progressive Web App
+- Solution URL : [countries](https://github.com/Axurynn/countries)
+- Home Page
+  - Live solution: [countries_live](https://axurynn.github.io/countries/)
+- Details Page
+  - Live solution: [country-example_live](https://axurynn.github.io/countries/bel)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## My process
 
-### Advanced Configuration
+### Built with
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Semantic HTML5 markup
+- SCSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [ReactJS](https://reactjs.org/) library
 
-### Deployment
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [React Hooks - useRef](https://fr.reactjs.org/docs/hooks-reference.html#useref)
+- [React Hooks - useNavigate(1)](https://reactrouter.com/docs/en/v6/api#usenavigate)
+- [React Hooks - useNavigate(2)](https://dev.to/salehmubashar/usenavigate-tutorial-react-js-aop)
+- [React Hooks - useContext(1)](https://fr.reactjs.org/docs/hooks-reference.html#usecontext)
+- [React Hooks - useContext(2)](https://morioh.com/p/e9f19436c4d9)
 
-### `npm run build` fails to minify
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [Axurynn](https://axurynn.fr)
+- Frontend Mentor - [@axurynn](https://www.frontendmentor.io/profile/axurynn)
+- Twitter - [@Drc_Axu](https://www.twitter.com/Drc_Axu)
+
+## Acknowledgments
+
+Special thanks to [Baptjack](https://baptjack.fr) who help me completed this challenge.
