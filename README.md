@@ -70,7 +70,7 @@ Mobile screenshot
 - Home Page
   - Live solution: [countries_live](https://axurynn.github.io/countries/)
 - Details Page
-  - Live solution: [country-example_live](https://axurynn.github.io/countries/bel)
+  - Live solution: [country-example_live](https://axurynn.github.io/countries/#/bel)
 
 ## My process
 
