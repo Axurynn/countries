@@ -42,7 +42,7 @@ Desktop screenshot
 
 Mobile screenshot
 
-![mobile-screenshot](./src/assets/screenshots/mobile-screenshot(light).png)
+<img src='./src/assets/screenshots/mobile-screenshot(light).png' alt='mobile-screenshot' style='height: 400px'>
 
 #### Home Page - Dark theme
 
@@ -52,7 +52,7 @@ Desktop screenshot
 
 Mobile screenshot
 
-![mobile-screenshot](./src/assets/screenshots/mobile-screenshot(dark).png)
+<img src='./src/assets/screenshots/mobile-screenshot(dark).png' alt='mobile-screenshot' style='height: 400px'>
 
 #### Details Page
 
@@ -62,7 +62,7 @@ Desktop screenshot
 
 Mobile screenshot
 
-![mobile-screenshot](./src/assets/screenshots/mobile-screenshot(detailsPage).png)
+<img src='./src/assets/screenshots/mobile-screenshot(detailsPage).png' alt='mobile-screenshot' style='height: 400px'>
 
 ### Links
 
